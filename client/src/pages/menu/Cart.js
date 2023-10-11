@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import styles from '../../styles/menu/cart.module.css'
 import AnimatedPage from '../../components/context/AnimatedPage'
 import * as BsIcons from 'react-icons/bs'

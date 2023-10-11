@@ -13,6 +13,6 @@ export const NavbarItems = [
     },
     {
         title: 'Menu',
-        url: '/products',
+        url: '/menu',
     }
 ]

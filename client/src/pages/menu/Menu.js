@@ -41,7 +41,7 @@ function Menu() {
                                     {products.map((item) => {
                                         return (
                                             <div className={styles.menuItems} key={item._id}>
-                                                <Link to={`/products/${item._id}`}>
+                                                <Link to={`/menu/${item._id}`}>
                                                     <img src={item.image} alt='slika' />
                                                     <h1>{item.title}</h1>
                                                     <p>

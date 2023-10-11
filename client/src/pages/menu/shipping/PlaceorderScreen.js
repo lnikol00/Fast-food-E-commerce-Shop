@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { useNavigate } from 'react-router-dom'
 import { ORDER_CREATE_RESET } from "../../../Redux/Constants/OrderContants";
 import { createOrder } from '../../../Redux/Actions/OrderAction'
+import Error from '../../../components/messages/Error'
 
 
 function PlaceorderScreen() {
@@ -38,11 +39,15 @@ function PlaceorderScreen() {
 
     const placeOrderHandler = (e) => {
         e.preventDefault();
-        createOrder({
-            orderItems: cart.cartItems,
-            shippingAddress: cart.shippingAddress,
-            paymentMethod: cart.paymentMethod,
-        })
+        dispatch(
+            createOrder({
+                orderItems: cart.cartItems,
+                shippingAddress: cart.shippingAddress,
+                paymentMethod: cart.paymentMethod,
+                estimatedTotal: estimatedTotal
+            })
+        )
+
     }
 
     return (
@@ -99,6 +104,11 @@ function PlaceorderScreen() {
                         <span>€ {estimatedTotal}</span>
                     </div>
                     <button onClick={placeOrderHandler}>PLACE ORDER</button>
+                    {error && (
+                        <Error>
+                            {error}
+                        </Error>
+                    )}
                 </div>
             </div>
         </div>

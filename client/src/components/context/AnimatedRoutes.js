@@ -27,8 +27,8 @@ function AnimatedRoutes() {
                 <Route index element={<Home />} />
                 <Route path='about-us' element={<About />} />
                 <Route path='contact' element={<Contact />} />
-                <Route path='products' element={<Menu />} />
-                <Route path='products/:id' element={<SingleProduct />} />
+                <Route path='menu' element={<Menu />} />
+                <Route path='menu/:id' element={<SingleProduct />} />
                 <Route path='cart/:id?' element={<Cart />} />
                 <Route path='shipping' element={<Shipping />} />
                 <Route path='payment' element={<Payment />} />
