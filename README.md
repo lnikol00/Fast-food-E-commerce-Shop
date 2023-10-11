@@ -4,6 +4,8 @@ Full stack Fast food E-commerce Webshop (ReactJS &amp; Node.js) with ADMIN panel
 # Starting backend server
 Entire backend logic is built using communication between Node.js and mongoDB.
 
+In the project directory, you can run:
+
 ### `npm run dev`
 
 # Starting frontend server
