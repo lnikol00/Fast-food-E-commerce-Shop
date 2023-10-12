@@ -9,4 +9,6 @@ orderRoute.post("/", protect, asyncHandler(orderController.placeOrder));
 
 orderRoute.get("/:id", protect, asyncHandler(orderController.getOrderById));
 
+orderRoute.put("/:id/pay", protect, asyncHandler(orderController.payOrder));
+
 export default orderRoute;
