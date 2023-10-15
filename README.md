@@ -20,6 +20,5 @@ Open http://localhost:3000 to view it in the browser.
 The page will reload if you make edits.
 You will also see any lint errors in the console.
 
-Client side is built using CSS Module.
-
+#`Client` side is built using CSS Module.
 Admin panel is built using CSS-in-JS solution (styled-components)
