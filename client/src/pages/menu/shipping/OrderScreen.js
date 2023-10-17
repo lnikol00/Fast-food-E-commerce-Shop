@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import styles from "../../../styles/menu/shipping/placeorder.module.css"
 import * as BiIcons from "react-icons/bi"
 import * as ImIcons from "react-icons/im"
-import { PayPalButton } from "react-paypal-button-v2"
 import { useDispatch, useSelector } from "react-redux"
 import { useParams } from 'react-router-dom'
 import { getOrderDetails } from '../../../Redux/Actions/OrderAction'
@@ -99,9 +98,6 @@ function OrderScreen() {
                                 <div className={styles.table}>
                                     <b>Total Price:</b>
                                     <span>€ {order.estimatedTotal}</span>
-                                </div>
-                                <div>
-                                    <PayPalButton amount={0.01}/>
                                 </div>
                             </div>
                         </div>
