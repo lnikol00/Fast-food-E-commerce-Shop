@@ -1,7 +1,7 @@
 # Fast-food-E-commerce-Shop
 Full stack Fast food E-commerce Webshop (ReactJS &amp; Node.js) with ADMIN panel.
 
-# Starting backend server
+# Starting Backend Server
 Entire backend logic is built using communication between Node.js and mongoDB.
 
 In the project directory, you can run:
@@ -19,7 +19,7 @@ Adding .env file:
 * PORT - set to 5000 ( in this case ) or you can choose any other localhost
 * NODE_ENV - set to development
 
-# Starting frontend server
+# Starting Frontend 
 Front end is built using React JavaScript and consists of 2 parts, client side and dashboard which is designed for admin.
 
 In the project directory, you can run:
