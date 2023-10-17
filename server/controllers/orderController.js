@@ -42,7 +42,7 @@ export const getOrderById = async (req, res) => {
     }
 }
 
-// GET ORDER BY ID
+// ORDER IS PAID
 export const payOrder = async (req, res) => {
     const order = await Order.findById(req.params.id)
 
