@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Starting Frontend
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -13,3 +13,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### `npm install` or `npm i`
+
+The command npm install is used in Node.js and JavaScript development to install the dependencies listed in a project's package.json file.
