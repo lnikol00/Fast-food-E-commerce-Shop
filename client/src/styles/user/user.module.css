@@ -32,21 +32,21 @@
     color: white;
 }
 
-.chatInfo {
+.chategoriesInfo {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.chatInfo svg {
+.chategoriesInfo svg {
     font-size: 3em;
 }
 
-.chatInfo span {
+.chategoriesInfo span {
     padding-left: 10px;
 }
 
-.chatChat div {
+.chategoriesOptions div {
     display: flex;
     justify-content: center;
     align-items: center;
