@@ -5,6 +5,7 @@ import Error from '../../../components/messages/Error';
 import { updateProfile } from '../../../Redux/Actions/UserAction';
 import Toast from '../../../components/messages/Toast';
 import { toast } from 'react-toastify';
+import AnimatedPage from '../../../components/context/AnimatedPage';
 
 function AccountDetails() {
     const [name, setName] = useState('');
@@ -52,53 +53,56 @@ function AccountDetails() {
         }
     }
     return (
-        <>
-            <Toast />
-            {error && <Error>{error}</Error>}
-            {loading && <Loading />}
-            {updateLoading && <Loading />}
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label>Name</label>
-                    <input
-                        type='text'
-                        placeholder='Enter full name...'
-                        required
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                    />
-                </div>
-                <div>
-                    <label>Email</label>
-                    <input
-                        type='email'
-                        placeholder='Change email...'
-                        required
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                    />
-                </div>
-                <div>
-                    <label>New Password</label>
-                    <input
-                        type='password'
-                        placeholder='Enter new password...'
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                    />
-                </div>
-                <div>
-                    <label>Confirm Password</label>
-                    <input
-                        type='password'
-                        placeholder='Confirm password...'
-                        value={confirmPassword}
-                        onChange={(e) => setConfirmPassword(e.target.value)}
-                    />
-                </div>
-                <button>Update Account</button>
-            </form>
-        </>
+        <AnimatedPage>
+
+            <>
+                <Toast />
+                {error && <Error>{error}</Error>}
+                {loading && <Loading />}
+                {updateLoading && <Loading />}
+                <form onSubmit={handleSubmit}>
+                    <div>
+                        <label>Name</label>
+                        <input
+                            type='text'
+                            placeholder='Enter full name...'
+                            required
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                        />
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input
+                            type='email'
+                            placeholder='Change email...'
+                            required
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+                    </div>
+                    <div>
+                        <label>New Password</label>
+                        <input
+                            type='password'
+                            placeholder='Enter new password...'
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        />
+                    </div>
+                    <div>
+                        <label>Confirm Password</label>
+                        <input
+                            type='password'
+                            placeholder='Confirm password...'
+                            value={confirmPassword}
+                            onChange={(e) => setConfirmPassword(e.target.value)}
+                        />
+                    </div>
+                    <button>Update Account</button>
+                </form>
+            </>
+        </AnimatedPage>
     )
 }
 
