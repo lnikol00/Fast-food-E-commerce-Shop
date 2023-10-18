@@ -35,7 +35,7 @@ function Cart() {
     }, [dispatch, productId, qty])
 
     const continueShopping = () => {
-        navigate('/products')
+        navigate('/menu')
     }
 
     const checkoutHandler = () => {
