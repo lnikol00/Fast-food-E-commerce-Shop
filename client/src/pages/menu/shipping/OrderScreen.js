@@ -8,6 +8,7 @@ import { getOrderDetails } from '../../../Redux/Actions/OrderAction'
 import Error from '../../../components/messages/Error'
 import Loading from '../../../components/messages/Loading'
 import moment from "moment"
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 function OrderScreen() {
 
@@ -99,6 +100,9 @@ function OrderScreen() {
                                     <b>Total Price:</b>
                                     <span>€ {order.estimatedTotal}</span>
                                 </div>
+                                <PayPalScriptProvider options={{ clientId: "test" }}>
+                                    <PayPalButtons/>
+                                 </PayPalScriptProvider>
                             </div>
                         </div>
                     </>
