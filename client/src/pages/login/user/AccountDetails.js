@@ -79,10 +79,10 @@ function AccountDetails() {
                     />
                 </div>
                 <div>
-                    <label>Password</label>
+                    <label>New Password</label>
                     <input
                         type='password'
-                        placeholder='Enter password...'
+                        placeholder='Enter new password...'
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                     />
