@@ -42,6 +42,12 @@ export const getOrderById = async (req, res) => {
     }
 }
 
+// USER LOGIN ORDERS
+export const userLoginOrders = async (req, res) => {
+    const order = await Order.find({user: req.user._id}).sort({_id:-1});
+    res.json(order)
+}
+
 // ORDER IS PAID
 export const payOrder = async (req, res) => {
     const order = await Order.findById(req.params.id)

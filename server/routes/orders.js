@@ -5,7 +5,9 @@ import protect from "../middleware/AuthMiddleware.js";
 
 const orderRoute = express.Router();
 
-orderRoute.post("/", protect, asyncHandler(orderController.placeOrder));
+orderRoute.route('/')
+    .post(protect, asyncHandler(orderController.placeOrder))
+    .get(protect, asyncHandler(orderController.userLoginOrders));
 
 orderRoute.get("/:id", protect, asyncHandler(orderController.getOrderById));
 
