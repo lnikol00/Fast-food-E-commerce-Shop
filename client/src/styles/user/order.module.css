@@ -1,0 +1,70 @@
+.emptyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.emptyContainer a {
+    color: black;
+}
+
+.success {
+    background-color: lightgreen;
+}
+
+.danger {
+    background-color: lightcoral;
+}
+
+.mainContainer table {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContainer a {
+    color: black;
+}
+
+.mainContainer thead {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.mainContainer thead tr {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+
+.mainContainer tbody tr {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 10px 0;
+}
+
+.mainContainer tbody tr td {
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 650px) {
+    .mainContainer table {
+        width: 250px;
+    }
+
+    .mainContainer thead tr {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .mainContainer tbody tr {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+}

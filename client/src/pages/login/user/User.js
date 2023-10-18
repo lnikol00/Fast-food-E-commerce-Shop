@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { getUserDetails } from '../../../Redux/Actions/UserAction'
 import AccountDetails from './AccountDetails'
 import Orders from './Orders'
+import { listMyOrders } from '../../../Redux/Actions/OrderAction'
 
 function User() {
 
@@ -19,6 +20,7 @@ function User() {
     const { loading, error, orders } = orderListMy;
 
     useEffect(() => {
+        dispatch(listMyOrders())
         dispatch(getUserDetails("profile"))
     }, [dispatch])
 
@@ -50,12 +52,12 @@ function User() {
 
                     <div className={styles.data}>
                         {change ?
-                            <div>
+                            <div className={styles.orders}>
                                 <h1>My Orders</h1>
-                                <Orders orders={orders} loading={loading} error={error}/>
+                                <Orders orders={orders} loading={loading} error={error} />
                             </div>
                             :
-                            <div>
+                            <div className={styles.details}>
                                 <h1>Account Details</h1>
                                 <AccountDetails />
                             </div>
