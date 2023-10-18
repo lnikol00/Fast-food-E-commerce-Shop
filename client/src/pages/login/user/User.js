@@ -15,6 +15,8 @@ function User() {
 
     const userLogin = useSelector((state) => state.userLogin)
     const { userInfo } = userLogin;
+    const orderListMy = useSelector((state) => state.orderListMy);
+    const { loading, error, orders } = orderListMy;
 
     useEffect(() => {
         dispatch(getUserDetails("profile"))
@@ -26,13 +28,13 @@ function User() {
                 <h1>My Account</h1>
                 <div className={styles.infoContainer}>
                     <div className={styles.chategories}>
-                        <div className={styles.chatInfo}>
+                        <div className={styles.chategoriesInfo}>
                             <div>
                                 <BiIcons.BiSolidUserCircle />
                             </div>
                             <span>Hello,<br />{userInfo.name}</span>
                         </div>
-                        <div className={styles.chatChat}>
+                        <div className={styles.chategoriesOptions}>
                             <div className={change ? `${styles.Target}` : `${styles.notTarget}`}
                                 onClick={() => setChange(true)}
                             >
@@ -50,7 +52,7 @@ function User() {
                         {change ?
                             <div>
                                 <h1>My Orders</h1>
-                                <Orders />
+                                <Orders orders={orders} loading={loading} error={error}/>
                             </div>
                             :
                             <div>
