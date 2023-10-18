@@ -1,4 +1,4 @@
-# Starting Backend Server
+# Backend - server
 Entire backend logic is built using communication between Node.js and mongoDB.
 
 In the project directory, you can run:
