@@ -144,9 +144,14 @@
     .data {
         flex-direction: column;
         width: 300px;
+        margin-right: 0;
     }
 
     .data form {
         grid-template-columns: repeat(1, auto);
+    }
+
+    .data div{
+        margin: 5px;
     }
 }
