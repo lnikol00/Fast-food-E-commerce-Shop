@@ -1,11 +1,37 @@
 # Fast-food-E-commerce-Shop
+
+Overview:
+
 Full stack Fast food E-commerce Webshop (ReactJS &amp; Node.js) with ADMIN panel.
 Frontend is built using React JavaScript and consists of 2 parts, client side and Admin panel (dashboard).
 **Client page** is designed using CSS Module.
 **Admin panel** is designed using CSS-in-JS solution (styled-components)
 Entire backend logic is built using communication between Node.js and mongoDB.
 
+Features:
 
+Client-Side:
+
+* Menu Display: Present the fast food chain's menu items, including descriptions and prices.
+* Ordering System: Allow customers to browse the menu, add items to their cart, and place orders.
+* User Registration and Authentication: Enable users to register, log in, and track order history.
+* Real-Time Order Tracking: Provide real-time updates on the status of customers' orders.
+* Payment Integration: Support secure payment options for online orders.
+
+Admin Panel:
+
+* Menu Management: Easily add, update, or remove menu items and categories.
+* Order Management: View and manage incoming orders, update order statuses, and track order history.
+* User Management: Admins can manage customer accounts, track their order history, and handle support requests.
+* Analytics and Reporting: Provide insights into sales data, customer behavior, and order trends.
+* Inventory Management: Monitor and update ingredient stock levels for menu items.
+* Security and Role-Based Access: Implement role-based access control to protect sensitive admin functionalities.
+
+Backend:
+
+* RESTful API: Develop a RESTful API using Node.js to enable communication between the frontend and the database.
+* Database Integration: Utilize MongoDB to store and manage menu items, orders, customer data, and more.
+* Authentication and Authorization: Implement secure authentication mechanisms for customers and admin users.
 
 <h1 align="left">Languages and Tools:</h1>
 <p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://redux.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/> </a> </p>
