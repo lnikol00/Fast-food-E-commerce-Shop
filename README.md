@@ -1,5 +1,9 @@
 # Fast-food-E-commerce-Shop
 
+Clone the repository into your projects directory:
+
+
+
 # Project Description
 
 Overview:
