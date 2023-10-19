@@ -2,6 +2,15 @@
 Full stack Fast food E-commerce Webshop (ReactJS &amp; Node.js) with ADMIN panel.
 
 # Backend - server
+
+<h2>Instalation</h2>
+
+### `npm install` or `npm i`
+
+The command is used in Node.js and JavaScript development to install the dependencies listed in a project's package.json file.
+
+<h2>Project</h2>
+
 Entire backend logic is built using communication between Node.js and mongoDB.
 
 In the project directory, you can run:
@@ -13,10 +22,6 @@ The command npm run dev is typically used in a Node.js-based project to start a 
 * npm: This is the Node Package Manager, which is used to manage and install packages and dependencies for Node.js projects.
 * run: This is a subcommand of npm that is used to execute a script defined in your project's package.json file.
 * dev: This is the name of the script you want to run. The name "dev" is a common convention, but you can name your scripts as you see fit.
-
-### `npm install` or `npm i`
-
-The command is used in Node.js and JavaScript development to install the dependencies listed in a project's package.json file.
 
 Adding .env file: 
 
