@@ -34,8 +34,6 @@ Adding .env file:
 
 The command is used in Node.js and JavaScript development to install the dependencies listed in a project's package.json file.
 
-Front end is built using React JavaScript and consists of 2 parts, client side and dashboard which is designed for admin.
-
 In the project directory, you can run:
 
 ### `npm start`
