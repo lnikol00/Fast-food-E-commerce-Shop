@@ -1,17 +1,15 @@
 # Fast-food-E-commerce-Shop
 Full stack Fast food E-commerce Webshop (ReactJS &amp; Node.js) with ADMIN panel.
+Front end is built using React JavaScript and consists of 2 parts, client side and dashboard which is designed for admin.
+**Client page** is built using CSS Module.
+**Admin panel** is built using CSS-in-JS solution (styled-components)
+Entire backend logic is built using communication between Node.js and mongoDB.
 
 # Backend - server
-
-<h2>Instalation</h2>
 
 ### `npm install` or `npm i`
 
 The command is used in Node.js and JavaScript development to install the dependencies listed in a project's package.json file.
-
-<h2>Project</h2>
-
-Entire backend logic is built using communication between Node.js and mongoDB.
 
 In the project directory, you can run:
 
@@ -31,6 +29,11 @@ Adding .env file:
 * NODE_ENV - set to development
 
 # Frontend - client 
+
+### `npm install` or `npm i`
+
+The command is used in Node.js and JavaScript development to install the dependencies listed in a project's package.json file.
+
 Front end is built using React JavaScript and consists of 2 parts, client side and dashboard which is designed for admin.
 
 In the project directory, you can run:
@@ -41,10 +44,6 @@ Open http://localhost:3000 to view it in the browser.
 
 The page will reload if you make edits.
 You will also see any lint errors in the console.
-
-### `npm install` or `npm i`
-
-The command is used in Node.js and JavaScript development to install the dependencies listed in a project's package.json file.
 
 **Client page** is built using CSS Module.
 **Admin panel** is built using CSS-in-JS solution (styled-components)
