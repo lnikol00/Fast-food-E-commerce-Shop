@@ -16,7 +16,7 @@ The command npm run dev is typically used in a Node.js-based project to start a 
 
 ### `npm install` or `npm i`
 
-The command npm install is used in Node.js and JavaScript development to install the dependencies listed in a project's package.json file.
+The command is used in Node.js and JavaScript development to install the dependencies listed in a project's package.json file.
 
 Adding .env file: 
 
@@ -39,7 +39,7 @@ You will also see any lint errors in the console.
 
 ### `npm install` or `npm i`
 
-The command npm install is used in Node.js and JavaScript development to install the dependencies listed in a project's package.json file.
+The command is used in Node.js and JavaScript development to install the dependencies listed in a project's package.json file.
 
 **Client page** is built using CSS Module.
 **Admin panel** is built using CSS-in-JS solution (styled-components)
