@@ -1,6 +1,6 @@
 # Fast-food-E-commerce-Shop
 Full stack Fast food E-commerce Webshop (ReactJS &amp; Node.js) with ADMIN panel.
-Front end is built using React JavaScript and consists of 2 parts, client side and dashboard which is designed for admin.
+Frontend is built using React JavaScript and consists of 2 parts, client side and Admin panel (dashboard).
 **Client page** is built using CSS Module.
 **Admin panel** is built using CSS-in-JS solution (styled-components)
 Entire backend logic is built using communication between Node.js and mongoDB.
