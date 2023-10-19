@@ -2,7 +2,7 @@
 
 Clone the repository into your projects directory:
 
-### ``
+### `git clone git@github.com:lnikol00/Fast-food-E-commerce-Shop.git`
 
 # Project Description
 
