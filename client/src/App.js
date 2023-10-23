@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { AnimatePresence } from 'framer-motion';
 import { Routes, Route, useLocation } from "react-router-dom";

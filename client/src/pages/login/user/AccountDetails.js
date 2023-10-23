@@ -48,7 +48,7 @@ function AccountDetails() {
             //UPDATE PROFILE
             dispatch(updateProfile({ id: user._id, name, email, password }))
             if (!toast.isActive(toastId.current)) {
-                toastId.current = toast.error("Profile Updated", Toastobject)
+                toastId.current = toast.success("Profile Updated", Toastobject)
             }
         }
     }
