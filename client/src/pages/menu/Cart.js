@@ -39,7 +39,7 @@ function Cart() {
     }
 
     const checkoutHandler = () => {
-        navigate("/login?redirect=shipping")
+        navigate("/shipping")
     }
 
     const removeFromCartHandle = (id) => {
