@@ -31,7 +31,7 @@ function Login() {
         if (userInfo) {
             navigate(from, { replace: true });
         }
-    }, [userInfo, navigate])
+    }, [userInfo, from, navigate])
 
     const handleSubmit = (e) => {
         e.preventDefault();
