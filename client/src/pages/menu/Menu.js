@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { motion } from "framer-motion"
 import styles from "../../styles/menu/menu.module.css"
 import AnimatedPage from '../../components/context/AnimatedPage'
 import * as GiIcons from 'react-icons/gi'
@@ -38,9 +39,26 @@ function Menu() {
                             :
                             (
                                 <>
-                                    {products.map((item) => {
+                                    {products.map((item, i) => {
                                         return (
-                                            <div className={styles.menuItems} key={item._id}>
+                                            <motion.div
+                                                className={styles.menuItems}
+                                                key={item._id}
+                                                initial={{
+                                                    opacity: 0,
+                                                    translateX: -35,
+                                                    translateY: -35,
+                                                }}
+                                                animate={{
+                                                    opacity: 1,
+                                                    translateX: 0,
+                                                    translateY: 0
+                                                }}
+                                                transition={{
+                                                    duration: 0.3,
+                                                    delay: i * 0.3
+                                                }}
+                                            >
                                                 <Link to={`/menu/${item._id}`}>
                                                     <img src={item.image} alt='slika' />
                                                     <h1>{item.title}</h1>
@@ -48,7 +66,7 @@ function Menu() {
                                                         €{item.price}
                                                     </p>
                                                 </Link>
-                                            </div>
+                                            </motion.div>
                                         )
                                     })}
                                 </>
