@@ -14,7 +14,7 @@ function Login() {
 
     const navigate = useNavigate();
     const location = useLocation();
-    const redirect = location.search ? String(location.search.split("=")[1]) : "/";
+    const from = location.state?.from?.pathname || "/"
 
     const formRef = useRef();
     const nameRef = useRef();
@@ -29,9 +29,9 @@ function Login() {
 
     useEffect(() => {
         if (userInfo) {
-            navigate(redirect);
+            navigate(from, { replace: true });
         }
-    }, [userInfo, redirect, navigate])
+    }, [userInfo, navigate])
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -79,7 +79,7 @@ function Login() {
                             />
                         </div>
                         <button >Log In</button>
-                        <Link to={redirect ? `/register?redirect=${redirect}` : '/register'}>Don't have account! Sign Up</Link>
+                        <Link to='/register'>Don't have account! Sign Up</Link>
                     </form>
                 </div>
             </div>
