@@ -3,6 +3,7 @@ import styles from "../../../styles/menu/shipping/payment.module.css"
 import { useDispatch, useSelector } from 'react-redux'
 import { savePaymentMethod } from '../../../Redux/Actions/CartAction'
 import { useNavigate } from 'react-router-dom'
+import AnimatedPage from '../../../components/context/AnimatedPage'
 
 function Payment() {
 
@@ -26,19 +27,23 @@ function Payment() {
 
 
     return (
-        <div className={styles.mainContainer}>
-            <form onSubmit={handleSubmit}>
-                <h5>Select Payment Method</h5>
-                <div className={styles.radioContainer}>
-                    <input type='radio'
-                        value={paymentMethod}
-                        onChange={(e) => setPaymentMethod(e.target.value)}
-                    />
-                    <label>PayPal or Credit Card</label>
-                </div>
-                <button>Continue</button>
-            </form>
-        </div>
+        <AnimatedPage>
+
+            <div className={styles.mainContainer}>
+                <form onSubmit={handleSubmit}>
+                    <h5>Select Payment Method</h5>
+                    <div className={styles.radioContainer}>
+                        <input type='radio'
+                            value={paymentMethod}
+                            onChange={(e) => setPaymentMethod(e.target.value)}
+                        />
+                        <label>PayPal or Credit Card</label>
+                    </div>
+                    <button>Continue</button>
+                </form>
+            </div>
+
+        </AnimatedPage>
     )
 }
 

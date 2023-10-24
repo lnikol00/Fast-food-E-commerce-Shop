@@ -25,47 +25,45 @@ function User() {
     }, [dispatch])
 
     return (
-        <AnimatedPage>
-            <div className={styles.mainContainer}>
-                <h1>My Account</h1>
-                <div className={styles.infoContainer}>
-                    <div className={styles.chategories}>
-                        <div className={styles.chategoriesInfo}>
-                            <div>
-                                <BiIcons.BiSolidUserCircle />
-                            </div>
-                            <span>Hello,<br />{userInfo.name}</span>
+        <div className={styles.mainContainer}>
+            <h1>My Account</h1>
+            <div className={styles.infoContainer}>
+                <div className={styles.chategories}>
+                    <div className={styles.chategoriesInfo}>
+                        <div>
+                            <BiIcons.BiSolidUserCircle />
                         </div>
-                        <div className={styles.chategoriesOptions}>
-                            <div className={change ? `${styles.Target}` : `${styles.notTarget}`}
-                                onClick={() => setChange(true)}
-                            >
-                                My Orders
-                            </div>
-                            <div className={change ? `${styles.notTarget}` : `${styles.Target}`}
-                                onClick={() => setChange(false)}
-                            >
-                                Account Details
-                            </div>
-                        </div>
+                        <span>Hello,<br />{userInfo.name}</span>
                     </div>
-
-                    <div className={styles.data}>
-                        {change ?
-                            <div className={styles.orders}>
-                                <h1>My Orders</h1>
-                                <Orders orders={orders} loading={loading} error={error} />
-                            </div>
-                            :
-                            <div className={styles.details}>
-                                <h1>Account Details</h1>
-                                <AccountDetails />
-                            </div>
-                        }
+                    <div className={styles.chategoriesOptions}>
+                        <div className={change ? `${styles.Target}` : `${styles.notTarget}`}
+                            onClick={() => setChange(true)}
+                        >
+                            My Orders
+                        </div>
+                        <div className={change ? `${styles.notTarget}` : `${styles.Target}`}
+                            onClick={() => setChange(false)}
+                        >
+                            Account Details
+                        </div>
                     </div>
                 </div>
+
+                <div className={styles.data}>
+                    {change ?
+                        <div className={styles.orders}>
+                            <h1>My Orders</h1>
+                            <Orders orders={orders} loading={loading} error={error} />
+                        </div>
+                        :
+                        <div className={styles.details}>
+                            <h1>Account Details</h1>
+                            <AccountDetails />
+                        </div>
+                    }
+                </div>
             </div>
-        </AnimatedPage>
+        </div>
     )
 }
 

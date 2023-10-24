@@ -4,6 +4,7 @@ import styles from "../../styles/menu/single.module.css"
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux"
 import { listProductDetails } from '../../Redux/Actions/ProductActions'
+import AnimatedPage from '../../components/context/AnimatedPage';
 
 function SingleProduct() {
     let navigate = useNavigate();
@@ -25,48 +26,51 @@ function SingleProduct() {
     }
 
     return (
-        <div className={styles.mainContainer}>
-            {
-                loading ? (<p>Loading...</p>) : error ? (<p>Something went wrond</p>)
-                    :
-                    (
-                        <>
-                            <div className={styles.image}>
-                                <img src={product.image} alt={product.title} />
-                            </div>
-                            <div className={styles.description}>
-                                <h1>{product.title}</h1>
-                                <p>{product.description}</p>
-                                <div className={styles.price}>
-                                    <div>
-                                        <b>Price: </b>
-                                        <p>{product.price}</p>
-                                    </div>
-                                    <div>
-                                        <b>Quantity: </b>
-                                        <select
-                                            onChange={(e) => setQty(e.target.value)}
-                                        >
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                            <option>7</option>
-                                            <option>8</option>
-                                            <option>9</option>
-                                            <option>10</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <button onClick={AddToCartHandle}>Add to Cart</button>
-                                    </div>
+        <AnimatedPage>
+
+            <div className={styles.mainContainer}>
+                {
+                    loading ? (<p>Loading...</p>) : error ? (<p>Something went wrond</p>)
+                        :
+                        (
+                            <>
+                                <div className={styles.image}>
+                                    <img src={product.image} alt={product.title} />
                                 </div>
-                            </div></>
-                    )
-            }
-        </div>
+                                <div className={styles.description}>
+                                    <h1>{product.title}</h1>
+                                    <p>{product.description}</p>
+                                    <div className={styles.price}>
+                                        <div>
+                                            <b>Price: </b>
+                                            <p>{product.price}</p>
+                                        </div>
+                                        <div>
+                                            <b>Quantity: </b>
+                                            <select
+                                                onChange={(e) => setQty(e.target.value)}
+                                            >
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <button onClick={AddToCartHandle}>Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div></>
+                        )
+                }
+            </div>
+        </AnimatedPage>
     )
 }
 

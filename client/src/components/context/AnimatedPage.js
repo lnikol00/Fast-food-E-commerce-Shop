@@ -1,5 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import logoImage from '../../images/logo.png'
+import "../../App.css"
 
 const animation = {
     initial: { opacity: 0 },
@@ -9,14 +11,31 @@ const animation = {
 
 function AnimatedPage({ children }) {
     return (
-        <motion.div variants={animation}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            transition={{ duration: 0.5 }}
-        >
-            {children}
-        </motion.div>
+        <>
+            <div>
+                {children}
+            </div>
+            <motion.div
+                className='slide-in'
+                initial={{ scaleY: 0 }}
+                animate={{ scaleY: 0 }}
+                exit={{ scaleY: 1 }}
+                transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+            >
+                <img alt='logo' src={logoImage} />
+            </motion.div>
+            <motion.div
+                className='slide-out'
+                initial={{ scaleY: 1 }}
+                animate={{ scaleY: 0 }}
+                exit={{ scaleY: 0 }}
+                transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+            >
+                <img alt='logo' src={logoImage} />
+            </motion.div>
+
+        </>
+
     )
 }
 
