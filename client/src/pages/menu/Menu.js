@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from "framer-motion"
 import styles from "../../styles/menu/menu.module.css"
 import AnimatedPage from '../../components/context/AnimatedPage'
+import * as BsIcons from 'react-icons/bs'
 import * as GiIcons from 'react-icons/gi'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from "react-redux"
@@ -23,6 +24,8 @@ function Menu() {
     const cart = useSelector((state) => state.cart)
     const { cartItems } = cart;
 
+    const [keyword, setKeyword] = useState()
+
     return (
         <AnimatedPage>
             <div className={styles.mainContainer}>
@@ -32,6 +35,13 @@ function Menu() {
                         <Link to='/cart'><GiIcons.GiShoppingBag /></Link>
                         <span>{cartItems.length}</span>
                     </div>
+                </div>
+                <div className={styles.search}>
+                    <input
+                        type='search'
+                        placeholder='Search'
+                    />
+                    <BsIcons.BsSearch />
                 </div>
                 <div className={styles.menuContainer}>
                     {

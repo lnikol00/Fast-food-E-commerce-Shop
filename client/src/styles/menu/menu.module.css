@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 3em 0 2em;
 }
 
 .heading span {
@@ -17,7 +18,7 @@
 }
 
 .heading h1 {
-    padding: 1.2em;
+    padding-right: 1.2em;
     font-size: 3em;
     font-family: 'Dancing Script', cursive;
 }
@@ -29,6 +30,33 @@
 .heading svg {
     font-size: 3em;
     cursor: pointer;
+}
+
+.search {
+    margin: 0.5em 0 3em;
+    border: 1px solid black;
+}
+
+.search {
+    border: 0.5px solid black;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.search svg {
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    width: 400px;
+    padding-left: 10px;
+    font-size: 18px;
 }
 
 .menuContainer {
@@ -85,6 +113,14 @@
 }
 
 @media screen and (max-width: 700px) {
+    .heading h1 {
+        padding-right: 0.5em;
+    }
+
+    .search input {
+        width: 250px;
+    }
+
     .menuContainer {
         grid-template-columns: repeat(1, 1fr);
     }
