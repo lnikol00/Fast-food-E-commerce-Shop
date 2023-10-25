@@ -12,6 +12,8 @@ import Error from '../../components/messages/Error'
 
 function Menu() {
 
+    const [search, setSearch] = useState("");
+
     const dispatch = useDispatch()
 
     const productList = useSelector((state) => state.productList);
@@ -23,8 +25,6 @@ function Menu() {
 
     const cart = useSelector((state) => state.cart)
     const { cartItems } = cart;
-
-    const [keyword, setKeyword] = useState()
 
     return (
         <AnimatedPage>
@@ -40,6 +40,7 @@ function Menu() {
                     <input
                         type='search'
                         placeholder='Search'
+                        onChange={(e) => setSearch(e.target.value)}
                     />
                     <BsIcons.BsSearch />
                 </div>
@@ -49,7 +50,14 @@ function Menu() {
                             :
                             (
                                 <>
-                                    {products.map((item, i) => {
+                                    {products.filter((item) => {
+                                        if (search === "") {
+                                            return item;
+                                        }
+                                        else if (item.title.toLocaleLowerCase().includes(search.toLocaleLowerCase())) {
+                                            return item;
+                                        }
+                                    }).map((item, i) => {
                                         return (
                                             <motion.div
                                                 className={styles.menuItems}
