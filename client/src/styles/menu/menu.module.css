@@ -55,7 +55,7 @@
     border: none;
     outline: none;
     width: 400px;
-    padding-left: 10px;
+    padding: 0 10px;
     font-size: 18px;
 }
 
