@@ -9,7 +9,7 @@ Clone the repository into your projects directory:
 Overview:
 
 Full stack Fast food E-commerce Webshop (ReactJS &amp; Node.js).
-Project aims to create a comprehensive web application that showcases a fast food chain's offerings and provides tools for managing the business. The application is divided into two main components: the client-side for customers to browse and order, and an admin panel for managing the fast food chain's operations. It leverages React for the frontend, Node.js for the backend server, and MongoDB as the database for data management.
+Project aims to create a comprehensive web application that showcases a fast food chain's offerings and provides tools for managing the business. It leverages React for the frontend, Node.js for the backend server, and MongoDB as the database for data management.
 Features:
 
 Client-Side:
