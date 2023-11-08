@@ -8,7 +8,7 @@ Clone the repository into your projects directory:
 
 Overview:
 
-Full stack Fast food E-commerce Webshop (ReactJS &amp; Node.js) with ADMIN panel.
+Full stack Fast food E-commerce Webshop (ReactJS &amp; Node.js).
 Project aims to create a comprehensive web application that showcases a fast food chain's offerings and provides tools for managing the business. The application is divided into two main components: the client-side for customers to browse and order, and an admin panel for managing the fast food chain's operations. It leverages React for the frontend, Node.js for the backend server, and MongoDB as the database for data management.
 Features:
 
@@ -19,15 +19,6 @@ Client-Side:
 * User Registration and Authentication: Enable users to register, log in, and track order history.
 * Real-Time Order Tracking: Provide real-time updates on the status of customers' orders.
 * Payment Integration: Support secure payment options for online orders.
-
-Admin Panel:
-
-* Menu Management: Easily add, update, or remove menu items and categories.
-* Order Management: View and manage incoming orders, update order statuses, and track order history.
-* User Management: Admins can manage customer accounts, track their order history, and handle support requests.
-* Analytics and Reporting: Provide insights into sales data, customer behavior, and order trends.
-* Inventory Management: Monitor and update ingredient stock levels for menu items.
-* Security and Role-Based Access: Implement role-based access control to protect sensitive admin functionalities.
 
 Backend:
 
